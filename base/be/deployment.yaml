@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: timetable-planner-be-deployment
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: timetable-planner-be
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: timetable-planner-be
+    spec:
+      containers:
+        - name: timetable-planner-be
+          image: scgskku/timetable-planner-be
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - secretRef:
+              name: timetable-planner-be-secret

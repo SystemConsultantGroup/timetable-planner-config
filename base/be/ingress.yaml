@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: timetable-planner-be-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-clusterissuer"
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://sttp.scg.skku.ac.kr"
+spec:
+  tls:
+    - hosts:
+        - api.sttp.scg.skku.ac.kr
+      secretName: timetable-planner-be-tls
+  rules:
+    - host: api.sttp.scg.skku.ac.kr
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: timetable-planner-be-service
+                port:
+                  number: 80

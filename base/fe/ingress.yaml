@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: timetable-planner-fe-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-clusterissuer"
+spec:
+  tls:
+    - hosts:
+        - sttp.scg.skku.ac.kr
+      secretName: timetable-planner-fe-tls
+  rules:
+    - host: sttp.scg.skku.ac.kr
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: timetable-planner-fe-service
+                port:
+                  number: 80
