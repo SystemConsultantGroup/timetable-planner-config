@@ -2,11 +2,11 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: timetable-planner-fe-prod
 resources:
-  - namespace.yaml
-  - ../../base/fe
+- namespace.yaml
+- ../../base/fe
 
 images:
-  - name: scgskku/timetable-planner-fe
-    newName: scgskku/timetable-planner-fe-prod
-  - name: scgskku/timetable-planner-fe-prod
-    newTag: thisistemporarytag
+- name: scgskku/timetable-planner-fe
+  newName: scgskku/timetable-planner-fe-prod
+- name: scgskku/timetable-planner-fe-prod
+  newTag: 7553eea53b690e002278ab8d5ef94f6bc0655a86
