@@ -4,7 +4,7 @@ namespace: timetable-planner-be-dev
 resources:
 - namespace.yaml
 - secret.yaml
-- ../../base/be
+- ../../../base/be
 
 patches:
 - path: ingress-patch.json

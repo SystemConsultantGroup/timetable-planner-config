@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: timetable-planner-fe-dev
 resources:
   - namespace.yaml
-  - ../../base/fe
+  - ../../../base/fe
 
 patches:
   - path: ingress-patch.json

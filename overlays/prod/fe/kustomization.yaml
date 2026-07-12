@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: timetable-planner-fe-prod
 resources:
   - namespace.yaml
-  - ../../base/fe
+  - ../../../base/fe
 
 images:
   - name: scgskku/timetable-planner-fe
