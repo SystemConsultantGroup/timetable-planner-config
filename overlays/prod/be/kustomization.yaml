@@ -4,7 +4,7 @@ namespace: timetable-planner-be-prod
 resources:
 - namespace.yaml
 - secret.yaml
-- ../../base/be
+- ../../../base/be
 
 images:
 - name: scgskku/timetable-planner-be
