@@ -14,6 +14,6 @@ patches:
 
 images:
 - name: scgskku/timetable-planner-be
-  newTag: 7c135d4035dcae80a4b13df89bc6d31935cba3db
+  newTag: 3cd1b0cc656e2b3b81cc44ba2fc451331b7ddadc
 - name: scgskku/timetable-planner-be-dev
   newTag: thisistemporarytag
