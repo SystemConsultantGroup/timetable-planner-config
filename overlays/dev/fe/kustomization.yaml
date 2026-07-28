@@ -14,4 +14,4 @@ images:
 - name: scgskku/timetable-planner-fe
   newName: scgskku/timetable-planner-fe-dev
 - name: scgskku/timetable-planner-fe-dev
-  newTag: 773080cfb8fb6df933cd761ec158ebdc96dfdfa1
+  newTag: a059c20f42be035b21a647440b5f75379fcc52b4
