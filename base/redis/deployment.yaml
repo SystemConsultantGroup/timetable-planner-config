@@ -20,8 +20,14 @@ spec:
         - containerPort: 6379
         args:
         - redis-server
+        - --save
+        - ""
         - --appendonly
-        - "yes"
+        - "no"
+        - --maxmemory
+        - 128mb
+        - --maxmemory-policy
+        - allkeys-lru
         - --requirepass
         - $(REDIS_PASSWORD)
         envFrom:
