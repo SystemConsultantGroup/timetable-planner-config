@@ -1,8 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: timetable-planner-fe-prod
+namespace: timetable-planner-prod
 resources:
-- namespace.yaml
 - ../../../base/fe
 
 images:
