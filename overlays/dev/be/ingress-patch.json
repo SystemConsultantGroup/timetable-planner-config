@@ -1,11 +1,6 @@
 [
     {
         "op": "replace",
-        "path": "/metadata/annotations/nginx.ingress.kubernetes.io~1cors-allow-origin",
-        "value": "https://sttp-dev.scg.skku.ac.kr"
-    },
-    {
-        "op": "replace",
         "path": "/spec/tls/0/hosts/0",
         "value": "api.sttp-dev.scg.skku.ac.kr"
     },
