@@ -16,4 +16,4 @@ images:
 - name: scgskku/timetable-planner-be
   newTag: 501959c6fc2b34d980e5735672a71ecad0d8d34e
 - name: scgskku/timetable-planner-be-dev
-  newTag: 0b12fa4fb9e8d30144d5d6f9ce4754e46f3f9b8c
+  newTag: 6b47c6868ff9e261b3e1405a92d32365bc5f70f6
