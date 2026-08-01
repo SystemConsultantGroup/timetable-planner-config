@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: timetable-planner-dev
 resources:
 - secret.yaml
+- configmap.yaml
 - ../../../base/be
 
 patches:
@@ -10,6 +11,10 @@ patches:
   target:
     kind: Ingress
     name: timetable-planner-be-ingress
+- path: deployment-config-patch.json
+  target:
+    kind: Deployment
+    name: timetable-planner-be-deployment
 
 images:
 - name: scgskku/timetable-planner-be
