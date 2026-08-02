@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: timetable-planner-be-config
 data:
-  MCP_OAUTH_REDIRECT_URIS: "https://chatgpt.com/connector/oauth/pending"
+  MCP_OAUTH_REDIRECT_URIS: "https://chatgpt.com/connector/oauth/WSmrgHwoD5km"
