@@ -8,4 +8,4 @@ resources:
 images:
 - name: scgskku/timetable-planner-be
   newName: scgskku/timetable-planner-be-prod
-  newTag: 12d3ab54cf20ae45a0d42b77c93807e51c0c53d9
+  newTag: 9a7761b85dfa7c10548254fe4ca17467d4ac9bc3
