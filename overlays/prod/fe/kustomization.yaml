@@ -7,6 +7,4 @@ resources:
 images:
 - name: scgskku/timetable-planner-fe
   newName: scgskku/timetable-planner-fe-prod
-  newTag: ff75bd694bd0ee7062872565f8e0a01f3c53813a
-- name: scgskku/timetable-planner-fe-prod
   newTag: 342d318064cb27d139aab86a9ba8a75260bf05f3
