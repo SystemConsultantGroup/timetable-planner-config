@@ -2,11 +2,11 @@
     {
         "op": "replace",
         "path": "/spec/tls/0/hosts/0",
-        "value": "sttp-dev.scg.skku.ac.kr"
+        "value": "skkedule-dev.scg.skku.ac.kr"
     },
     {
         "op": "replace",
         "path": "/spec/rules/0/host",
-        "value": "sttp-dev.scg.skku.ac.kr"
+        "value": "skkedule-dev.scg.skku.ac.kr"
     }
 ]

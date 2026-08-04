@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - api.sttp.scg.skku.ac.kr
+        - api.skkedule.scg.skku.ac.kr
       secretName: timetable-planner-be-tls
   rules:
-    - host: api.sttp.scg.skku.ac.kr
+    - host: api.skkedule.scg.skku.ac.kr
       http:
         paths:
           - path: /
