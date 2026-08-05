@@ -11,11 +11,7 @@ patches:
   target:
     kind: Ingress
     name: timetable-planner-be-ingress
-- path: deployment-config-patch.json
-  target:
-    kind: Deployment
-    name: timetable-planner-be-deployment
-
+    
 images:
 - name: scgskku/timetable-planner-be
   newName: scgskku/timetable-planner-be-dev
