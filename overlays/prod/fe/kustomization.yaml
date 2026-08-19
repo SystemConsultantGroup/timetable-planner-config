@@ -9,4 +9,4 @@ images:
   newName: scgskku/timetable-planner-fe-prod
   newTag: 342d318064cb27d139aab86a9ba8a75260bf05f3
 - name: scgskku/timetable-planner-fe-prod
-  newTag: 14741f86559a964f5624f7a1d5dd9c809456ff1b
+  newTag: 2f3507a39058adc1f6f88d0df94eab6977b95c1a
